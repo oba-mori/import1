@@ -32,18 +32,20 @@
     
 
     <!-- import を使用するときは以下のようにする -->
-    <!-- <script type="module">  //importを使用するため、module属性を付与する
+    <script type="module">  //importを使用するため、module属性を付与する
       
         import {A} from './importable.js';
 
         let a = new A();
-    </script> -->
+
+        
+    </script>
 
 
     <!-- またはこのように書く -->
     <!-- これでもいいみたいだけど、 GET https://oba-mori.github.io/import1/'importable.js' net::ERR_ABORTED 404　というエラーが出る -->
-    <script src="https://github.com/oba-mori/import1/blob/main/importable.js" type="module"></script> 
-    
+    <!-- <script src="'./importable.js'" type="module"></script> 
+     -->
 
   </body>
 
